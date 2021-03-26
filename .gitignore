@@ -123,3 +123,4 @@ dist
 .env.test.local
 .env.production.local
 
+.idea
