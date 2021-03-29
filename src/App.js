@@ -1,15 +1,14 @@
-import './App.css';
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import Form from "./components/Form/Form";
+import Layout from "./components/Layout/Layout";
 
 const App = () => {
     return (
-        <div className="App">
+        <>
             <Header/>
-            <Form />
+            <Layout />
             <Footer/>
-        </div>
+        </>
     );
 }
 

@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../../assets/images/logo.svg';
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
     return (
         <footer>
             <div className="flex items-center ">
@@ -13,8 +14,8 @@ const Footer = () => {
                                 <div className="flex flex-shrink-0 items-center rounded-xl">
                                     <img src={logo} style={{height: "100px"}} alt="BeezyAPI" />
                                 </div>
-                                <div className="flex flex-grow">
-                                    <div className="ml-32 text-lg text-yellow-500">
+                                <div className="flex flex-grow mx-auto md:mx-0">
+                                    <div id='slug' className="md:ml-32 text-lg text-yellow-500">
                                         Log Analysis Made Easy
                                     </div>
                                 </div>
@@ -24,7 +25,7 @@ const Footer = () => {
                         <div className="col-span-12 sm:col-span-6 md:col-span-6 pull-right">
                             <div className="flex flex-row p-4">
                                 <div className="flex flex-col mt-16 flex-grow mx-auto">
-                                    <div className="text-sm text-yellow-500 mb-4 text-right">All Right Reserved &copy; 2021</div>
+                                    <div id='copy' className="text-sm text-yellow-500 mb-4 md:text-right">All Right Reserved &copy; {currentYear}</div>
                                 </div>
                             </div>
                         </div>

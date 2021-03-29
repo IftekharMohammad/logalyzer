@@ -3,7 +3,7 @@ A basic Linux log analyzer tool. React is used for the frontend
 
 
 # Tech Used
-* React 16
+* React 17
 * Node 14+
 * Enzyme
 

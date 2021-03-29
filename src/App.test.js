@@ -1,5 +1,7 @@
 import App from './App';
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Layout from './components/Layout/Layout';
 import { shallow } from 'enzyme';
 
 describe("App Component", ()=>{
@@ -17,8 +19,12 @@ describe("App Component", ()=>{
     expect(wrapper.contains(<Header />)).toBe(true);
   });
 
+  it('renders Main Body', () => {
+    expect(wrapper.contains(<Layout />)).toBe(true);
+  });
+
   it('renders Footer', () => {
-    expect(wrapper.contains(<Header />)).toBe(true);
+    expect(wrapper.contains(<Footer />)).toBe(true);
   });
 
   // it('render lookup button', () => {
