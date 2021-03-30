@@ -11,7 +11,7 @@ const Form = () => {
                             Analyze Log File
                         </div>
                         <div className="flex py-4 text-sm">
-                            <Tooltip tooltipText={'Please provide start and end date along with search keyword to analysis log'} />
+                            <Tooltip tooltipText={'Please provide start and end date along with search keyword to analysis log'} bgClass='bg-white' textClass='text-yellow-400' shadow={true} direction='right'/>
                         </div>
                     </div>
                 </div>
