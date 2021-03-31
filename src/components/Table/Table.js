@@ -1,57 +1,41 @@
 import React from 'react';
+import Tooltip from "../Blocks/Tooltip/Tooltip";
 
 const Tables = () => {
     return (
-        <>
-            <h2 className="leading-relaxed mx-2">Log Entries</h2>
-            <table className="w-full flex flex-row flex-no-wrap sm:bg-white overflow-hidden sm:shadow-lg my-5">
-                        <thead className="text-white">
-                        <tr className="bg-yellow-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
-                            <th className="p-3 text-left">Date</th>
-                            <th className="p-3 text-left">Entry</th>
-                        </tr>
-                        <tr className="bg-yellow-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
-                            <th className="p-3 text-left">Date</th>
-                            <th className="p-3 text-left">Entry</th>
-                        </tr>
-                        <tr className="bg-yellow-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
-                            <th className="p-3 text-left">Date</th>
-                            <th className="p-3 text-left">Entry</th>
-                        </tr>
-                        <tr className="bg-yellow-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
-                            <th className="p-3 text-left">Date</th>
-                            <th className="p-3 text-left">Entry</th>
-                        </tr>
-                        </thead>
-                        <tbody className="flex-1 sm:flex-none">
-                        <tr className="flex flex-col flex-no wrap sm:table-row mb-2 sm:mb-0">
-                            <td className="border-grey-light border hover:bg-gray-100 p-3">John Covv</td>
-                            <td className="border-grey-light border hover:bg-gray-100 p-3">Lorem Ipsum is
-                                simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                                industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                                galley of type and scrambled it to make a type specimen book. It has survived not only
-                                five centuries, but also the leap into electronic typesetting, remaining essentially
-                                unchanged. It was popularised in the 1960s with the release of Letraset sheets
-                                containing Lorem Ipsum passages, and more recently with desktop publishing software like
-                                Aldus PageMaker including versions of Lorem Ipsum
-                            </td>
-                        </tr>
-                        <tr className="flex flex-col flex-no wrap sm:table-row mb-2 sm:mb-0">
-                            <td className="border-grey-light border hover:bg-gray-100 p-3">Michael Jackson</td>
-                            <td className="border-grey-light border hover:bg-gray-100 p-3">m_jackson@mail.com</td>
-                        </tr>
-                        <tr className="flex flex-col flex-no wrap sm:table-row mb-2 sm:mb-0">
-                            <td className="border-grey-light border hover:bg-gray-100 p-3">Julia</td>
-                            <td className="border-grey-light border hover:bg-gray-100 p-3">julia@mail.com</td>
-                        </tr>
-                        <tr className="flex flex-col flex-no wrap sm:table-row mb-2 sm:mb-0">
-                            <td className="border-grey-light border hover:bg-gray-100 p-3">Martin Madrazo</td>
-                            <td className="border-grey-light border hover:bg-gray-100 p-3">martin.madrazo@mail.com</td>
-                        </tr>
-                        </tbody>
-                    </table>
-        </>
+        <div className="w-full mb-6 lg:mb-0 lg:w-1/2 px-4 flex flex-col">
+            <div
+                className="flex-grow flex flex-col bg-white border-t border-b sm:rounded sm:border shadow overflow-hidden">
+                <div className="border-b">
+                    <div className="flex justify-between px-6 -mb-px">
+                        <div className="text-blue-dark py-4 text-lg">
+                            Log Data
+                        </div>
+                        <div className="flex py-4 text-sm">
+                            <Tooltip
+                                tooltipText={'All the log with the phrase will be shown here with the phrases highlighted'}
+                                bgClass='bg-white' textClass='text-yellow-400' shadow={true} direction='left'/>
+                        </div>
 
+                    </div>
+                </div>
+
+
+                <div className='overflow-hidden overflow-y-auto max-35'>
+                    <div className="flex-grow flex px-6 py-6 text-grey-darker items-center border-b -mx-4">
+                        <div className="w-2/5 xl:w-1/4 px-4 flex items-center">
+                            <span className="text-lg">Mar 12 12:13:15</span>
+                        </div>
+
+                        <div className="flex w-3/5 md:w/12">
+                            Text Will Be Here
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
     );
 };
 
