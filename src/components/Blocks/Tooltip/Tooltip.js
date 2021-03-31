@@ -3,7 +3,7 @@ import './Tooltip.css';
 // shadow:= Boolean
 
 const Tooltip = ({tooltipText, bgClass, textClass, shadow, direction}) => {
-    let tooltipTextClass = "tooltiptext " + bgClass + " " + textClass + " " + direction;
+    let tooltipTextClass = "tooltiptext z-50 " + bgClass + " " + textClass + " " + direction;
 
     if(shadow)
         tooltipTextClass = tooltipTextClass + " shadow";

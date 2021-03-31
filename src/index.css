@@ -7,7 +7,7 @@
 }
 
 .maintain-window-height {
-    max-height: calc(100vh - 36vh) !important;
+    max-height: calc(100vh - 33vh) !important;
 }
 
 .min-height {

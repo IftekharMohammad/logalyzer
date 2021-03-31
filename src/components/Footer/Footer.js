@@ -6,16 +6,16 @@ const Footer = () => {
     return (
         <footer>
             <div className="flex items-center ">
-                <div className="px-20 py-10 w-full">
+                <div className="px-20 py-6 w-full">
 
                     <div className="grid grid-cols-12 gap-4">
                         <div className="col-span-12 sm:col-span-6 md:col-span-6">
                             <div className="flex flex-col p-4">
                                 <div className="flex flex-shrink-0 items-center rounded-xl">
-                                    <img src={logo} style={{height: "100px"}} alt="BeezyAPI" />
+                                    <img src={logo} style={{height: "85px"}} alt="BeezyAPI" />
                                 </div>
                                 <div className="flex flex-grow mx-auto md:mx-0">
-                                    <div id='slug' className="md:ml-32 text-lg text-yellow-500">
+                                    <div id='slug' className="md:ml-20 text-lg text-yellow-500">
                                         Log Analysis Made Easy
                                     </div>
                                 </div>

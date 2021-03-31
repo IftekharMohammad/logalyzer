@@ -1,20 +1,40 @@
 import React from 'react';
 
-const CustomButton = ({ bgColorClass, textColorClass, borderColorClass, mode, onClick }) => {
+const CustomButton = ({text, bgColorClass, textColorClass, borderColorClass, mode, onClick }) => {
 
-    // Mode Can Be => [Filled, Border, Flat, Gradient, Relief, Round]
+    // Mode Can Be => [filled, border, flat, relief, round]
 
     const generateClass = (bgColorClass, textColorClass, borderColorClass, mode) => {
-        if(mode == 'ghost'){
 
+        if(mode === 'filled'){
+            return "focus:outline-none " + textColorClass + " text-sm py-2.5 px-5 rounded-md " + bgColorClass + " hover:" + bgColorClass + " hover:shadow-lg";
+        }  else if(mode === 'border') {
+            return "focus:outline-none " + textColorClass + " text-sm py-2.5 px-5 rounded-md border " + borderColorClass + " hover:" + bgColorClass;
+        } else if(mode === 'flat') {
+            return "focus:outline-none " + textColorClass + " text-sm py-2.5 px-5 rounded-md hover:" + bgColorClass;
+        } else if(mode === 'relief') {
+            return "focus:outline-none " + textColorClass + " text-sm py-2.5 px-5 border-b-4 " + borderColorClass + " rounded-md " + bgColorClass + " hover:" + bgColorClass;
+        } else if(mode === 'round') {
+            return "focus:outline-none " + textColorClass + " text-sm py-2.5 px-5 rounded-full border "+ borderColorClass +" hover:"+bgColorClass;
         }
-    }
+
+    };
 
     return (
         <button
-            className="bg-yellow-500 flex justify-center items-center text-white px-4 py-3 rounded-md focus:outline-none">Create
+            className={generateClass(bgColorClass, textColorClass, borderColorClass, mode)} onClick={onClick}> {text}
         </button>
+
     );
-}
+};
+
+CustomButton.defaultProps = {
+    text: "Success",
+    bgColorClass: "bg-blue-500",
+    textColorClass: "text-white",
+    borderColorClass: "",
+    mode: "filled",
+    onClick: console.log('Implement Click')
+};
 
 export default CustomButton;

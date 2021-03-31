@@ -1,7 +1,36 @@
-import React from 'react';
+import React, {useState, useRef} from 'react';
 import Tooltip from '../Blocks/Tooltip/Tooltip';
+import CustomDateTimePicker from '../Blocks/CustomDateTimePicker/CustomDateTimePicker';
+import CustomButton from  '../Blocks/CustomButton/CustomButton';
 
-const Form = () => {
+const Form = ({ onSubmit }) => {
+    const [startDate, setStartDate] = useState("");
+    const [endDate, setEndDate] = useState("");
+    const [phase, setPhase] = useState("");
+
+    const startRef = useRef();
+    const endRef = useRef();
+
+    const setDateParameters = (fieldName, data) => {
+
+        if(fieldName === "startDate"){
+            setStartDate(data);
+        }
+
+        if(fieldName === "endDate"){
+            setEndDate(data);
+        }
+
+    };
+
+    const submitForm = () => {
+
+        console.log(startDate);
+        console.log(endDate);
+
+        onSubmit();
+    };
+
     return (
 
         <div className="bg-white border-t border-b sm:border-l sm:border-r sm:rounded shadow mb-6">
@@ -20,19 +49,9 @@ const Form = () => {
                     <div className="w-full md:w-1/3 text-center py-8">
                         <div className="border-r">
                             <div className="flex flex-col">
-                                <label className="leading-loose">Start Date</label>
+                                <label className="leading-loose">Start Datetime</label>
                                 <div className="relative m-4 focus-within:text-gray-600 text-gray-400">
-                                    <input type="text"
-                                           className="pr-4 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
-                                           placeholder="25/02/2020"/>
-                                    <div className="absolute left-3 top-2">
-                                        <svg className="w-6 h-6" fill="none" stroke="currentColor"
-                                             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path strokeLinecap="round" strokeLinejoin="round"
-                                                  strokeWidth="2"
-                                                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                                        </svg>
-                                    </div>
+                                    <CustomDateTimePicker refs={startRef} parentFieldName="startDate" onSelect={setDateParameters}/>
                                 </div>
                             </div>
                         </div>
@@ -40,19 +59,9 @@ const Form = () => {
                     <div className="w-full md:w-1/3 text-center py-8">
                         <div className="border-r">
                             <div className="flex flex-col">
-                                <label className="leading-loose">End Date</label>
+                                <label className="leading-loose">End Datetime</label>
                                 <div className="relative m-4 focus-within:text-gray-600 text-gray-400">
-                                    <input type="text"
-                                           className="pr-4 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
-                                           placeholder="25/02/2020"/>
-                                    <div className="absolute left-3 top-2">
-                                        <svg className="w-6 h-6" fill="none" stroke="currentColor"
-                                             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path strokeLinecap="round" strokeLinejoin="round"
-                                                  strokeWidth="2"
-                                                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                                        </svg>
-                                    </div>
+                                    <CustomDateTimePicker refs={endRef} parentFieldName="endDate" onSelect={setDateParameters}/>
                                 </div>
                             </div>
                         </div>
@@ -63,16 +72,9 @@ const Form = () => {
                             <label className="leading-loose">Phase</label>
                             <div className="relative m-4 focus-within:text-gray-600 text-gray-400">
                                 <input type="text"
-                                       className="pr-4 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
-                                       placeholder="25/02/2020"/>
-                                <div className="absolute left-3 top-2">
-                                    <svg className="w-6 h-6" fill="none" stroke="currentColor"
-                                         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path strokeLinecap="round" strokeLinejoin="round"
-                                              strokeWidth="2"
-                                              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                                    </svg>
-                                </div>
+                                       className="pr-4 pl-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
+                                       placeholder="Crash"/>
+
                             </div>
                         </div>
                     </div>
@@ -80,14 +82,21 @@ const Form = () => {
                 </div>
 
                 <div className="border-t px-6">
+
                     <div className="py-4 flex items-center justify-center space-x-4">
-                        <button
-                            className="flex justify-center items-center text-gray-900 px-4 py-3 rounded-md focus:outline-none">
-                            Reset
-                        </button>
-                        <button
-                            className="bg-yellow-500 flex justify-center items-center text-white px-4 py-3 rounded-md focus:outline-none">Create
-                        </button>
+                        <CustomButton text={'Reset'} mode={'border'} bgColorClass={'bg-gray-100'}
+                                      textColorClass={'text-gray-400'} borderColorClass={'border-gray-400'}
+                                      onClick={() => {
+                                          startRef.current.resetData();
+                                          endRef.current.resetData();
+                                      }}
+                        />
+
+                        <CustomButton text={'Submit'} mode={'filled'} bgColorClass={'bg-yellow-400'}
+                                      textColorClass={'text-white'} borderColorClass={'border-yellow-400'}
+                                      onClick={submitForm}
+                        />
+
                     </div>
                 </div>
             </div>
