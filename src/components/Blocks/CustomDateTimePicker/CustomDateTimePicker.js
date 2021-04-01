@@ -1,15 +1,16 @@
-import React, {useState, useImperativeHandle } from "react";
+import React, {useState, useImperativeHandle} from "react";
 import DatePicker from 'react-datepicker'
 import "react-datepicker/dist/react-datepicker.css";
 import "./CustomDateTimePicker.css"
 
-const CustomDateTimePicker = ({ refs, parentFieldName, onSelect }) => {
+const CustomDateTimePicker = ({refs, parentFieldName, onSelect}) => {
     const [date, setDate] = useState(null);
 
     useImperativeHandle(refs, () => ({
 
         resetData() {
             setDate(null);
+            onSelect(parentFieldName, "");
         }
 
 
@@ -22,6 +23,7 @@ const CustomDateTimePicker = ({ refs, parentFieldName, onSelect }) => {
 
         dateString = dateString[1] + " " + parseInt(dateString[2]).toString() + " " + timeString[0];
         onSelect(parentFieldName, dateString);
+
     };
 
     return (
