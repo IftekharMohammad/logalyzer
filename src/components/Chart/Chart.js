@@ -3,16 +3,27 @@ import Tooltip from "../Blocks/Tooltip/Tooltip";
 import {Chart} from 'react-charts'
 
 
-const Charts = () => {
+const Charts = ({chartData}) => {
+
+    const processChartData = (chartData) => {
+        let charts = chartData["histogram"] ? chartData["histogram"] : []
+        console.log(charts)
+        let plotPoints = []
+        charts.forEach( (val, index) => {
+            console.log(val)
+            plotPoints.push([index, val["count"]])
+        })
+        return plotPoints
+    }
+
+    const processedData = processChartData(chartData);
+    console.log(processedData)
+
     const data = React.useMemo(
         () => [
             {
-                label: 'Series 1',
-                data: [[0, 1], [1, 2], [2, 4], [3, 2], [4, 7]]
-            },
-            {
-                label: 'Series 2',
-                data: [[0, 3], [1, 1], [2, 5], [3, 6], [4, 4]]
+                label: 'Log Chart',
+                data: processedData ? processedData : [[1,2],[2,4]]
             }
         ],
         []
@@ -20,7 +31,7 @@ const Charts = () => {
 
     const axes = React.useMemo(
         () => [
-            {primary: true, type: 'linear', position: 'bottom'},
+            {primary: true, type: 'time', position: 'bottom'},
             {type: 'linear', position: 'left'}
         ],
         []
@@ -41,7 +52,7 @@ const Charts = () => {
                     </div>
                 </div>
                 <div>
-                    <div className="text-center px-6 py-4">
+                    <div className="text-center px-6 py-4 overflow-hidden overflow-x-auto">
                         <div className="py-8" style={{
                             width: '680px',
                             height: '250px'

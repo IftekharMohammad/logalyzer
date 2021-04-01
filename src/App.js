@@ -14,7 +14,7 @@ const App = () => {
 
     useEffect(() => {
 
-        axios.get('https://reqres.in/api/users/2')
+        axios.get('http://localhost:8080/api/get_status', {headers: {"Access-Control-Allow-Origin": "*"}})
             .then(function (response) {
                 // handle success
                  setIsLoaded(true);

@@ -1,7 +1,19 @@
 import React from 'react';
 import Tooltip from "../Blocks/Tooltip/Tooltip";
 
-const Tables = () => {
+const Tables = ({logData}) => {
+
+    const makeHighlightedString = (txt, positions) => {
+        let log = (' ' + txt).slice(1);
+
+        positions.slice().reverse()
+            .forEach(function (item) {
+                log = [log.slice(0, item["toPosition"]), '</span>', log.slice(item["toPosition"])].join('');
+                log = [log.slice(0, item["fromPosition"]), '<span class="text-yellow-400">', log.slice(item["fromPosition"])].join('');
+            });
+        return log
+    }
+
     return (
         <div className="w-full mb-6 lg:mb-0 lg:w-1/2 px-4 flex flex-col">
             <div
@@ -22,15 +34,36 @@ const Tables = () => {
 
 
                 <div className='overflow-hidden overflow-y-auto max-35'>
-                    <div className="flex-grow flex px-6 py-6 text-grey-darker items-center border-b -mx-4">
-                        <div className="w-2/5 xl:w-1/4 px-4 flex items-center">
-                            <span className="text-lg">Mar 12 12:13:15</span>
-                        </div>
 
-                        <div className="flex w-3/5 md:w/12">
-                            Text Will Be Here
+                    {logData['data'] && logData['data'].length > 0 ? (
+                        logData['data'].map(function (data, index) {
+                            return (
+                                <div key={index}
+                                     className="flex-grow flex px-6 py-6 text-grey-darker items-center border-b -mx-4">
+                                    <div className="w-2/5 xl:w-1/4 px-4 flex items-center">
+                                        <span className="text-lg">{data["datetime"]}</span>
+                                    </div>
+
+                                    <div className="flex w-3/5 md:w/12">
+                                        <p dangerouslySetInnerHTML={{__html: makeHighlightedString(data["message"], data["highlightText"])}}>
+                                        </p>
+                                    </div>
+                                </div>
+                            )
+                        })) : (
+                        <div className="flex-grow flex px-6 py-6 text-grey-darker items-center border-b -mx-4">
+                            <div className="w-2/5 xl:w-1/4 px-4 flex items-center">
+                                <span className="text-lg"></span>
+                            </div>
+
+                            <div className="flex w-3/5 md:w/12">
+                                No Data Found
+                            </div>
                         </div>
-                    </div>
+                    )
+                    }
+
+
                 </div>
 
 

@@ -1,0 +1,819 @@
+// dummy data endpoint payload
+
+{
+                "data": [{
+                    "datetime": "Jul 24 02:38:22",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[16773]: connection from 84.102.20.2 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 02:38:22",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[16789]: connection from 84.102.20.2 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 02:38:22",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[16783]: connection from 84.102.20.2 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 02:38:22",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[16792]: connection from 84.102.20.2 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 02:38:22",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[16784]: connection from 84.102.20.2 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 02:38:22",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[16781]: connection from 84.102.20.2 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 02:38:22",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[16786]: connection from 84.102.20.2 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 02:38:22",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[16788]: connection from 84.102.20.2 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 02:38:22",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[16785]: connection from 84.102.20.2 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 02:38:22",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[16790]: connection from 84.102.20.2 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 02:38:22",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[16780]: connection from 84.102.20.2 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 02:38:22",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[16779]: connection from 84.102.20.2 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 02:38:22",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[16782]: connection from 84.102.20.2 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 02:38:22",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[16787]: connection from 84.102.20.2 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 02:38:22",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[16774]: connection from 84.102.20.2 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 02:38:22",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[16772]: connection from 84.102.20.2 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 02:38:22",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[16775]: connection from 84.102.20.2 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 02:38:22",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[16778]: connection from 84.102.20.2 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 02:38:22",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[16776]: connection from 84.102.20.2 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 02:38:22",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[16777]: connection from 84.102.20.2 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 02:38:22",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[16791]: connection from 84.102.20.2 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 02:38:22",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[16793]: connection from 84.102.20.2 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 02:38:22",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[16794]: connection from 84.102.20.2 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 13:46:32",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[22655]: connection from 211.107.232.1 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 13:46:32",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[22652]: connection from 211.107.232.1 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 13:46:32",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[22658]: connection from 211.107.232.1 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 13:46:32",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[22653]: connection from 211.107.232.1 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 13:46:32",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[22657]: connection from 211.107.232.1 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 13:46:32",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[22659]: connection from 211.107.232.1 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 13:46:32",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[22656]: connection from 211.107.232.1 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 13:46:32",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[22651]: connection from 211.107.232.1 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 13:46:32",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[22654]: connection from 211.107.232.1 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 13:46:34",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[22660]: connection from 211.107.232.1 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 13:46:34",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[22661]: connection from 211.107.232.1 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 13:46:34",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[22662]: connection from 211.107.232.1 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 13:46:34",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[22663]: connection from 211.107.232.1 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 13:46:34",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[22665]: connection from 211.107.232.1 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 13:46:34",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[22666]: connection from 211.107.232.1 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 13:46:34",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[22667]: connection from 211.107.232.1 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 13:46:34",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[22664]: connection from 211.107.232.1 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 13:46:34",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[22668]: connection from 211.107.232.1 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 24 13:46:35",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[22669]: connection from 211.107.232.1 () at Sun  2005"
+                }, {
+                    "datetime": "Jul 25 06:39:18",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[24970]: connection from 206.47.209.10 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 06:39:18",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[24971]: connection from 206.47.209.10 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 06:39:18",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[24972]: connection from 206.47.209.10 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 06:39:18",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[24977]: connection from 206.47.209.10 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 06:39:18",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[24976]: connection from 206.47.209.10 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 06:39:18",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[24974]: connection from 206.47.209.10 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 06:39:18",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[24973]: connection from 206.47.209.10 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 06:39:18",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[24975]: connection from 206.47.209.10 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 06:39:18",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[24978]: connection from 206.47.209.10 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 06:39:18",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[24962]: connection from 206.47.209.10 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 06:39:18",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[24967]: connection from 206.47.209.10 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 06:39:18",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[24966]: connection from 206.47.209.10 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 06:39:18",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[24968]: connection from 206.47.209.10 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 06:39:18",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[24965]: connection from 206.47.209.10 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 06:39:18",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[24964]: connection from 206.47.209.10 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 06:39:18",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[24958]: connection from 206.47.209.10 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 06:39:18",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[24956]: connection from 206.47.209.10 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 06:39:18",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[24957]: connection from 206.47.209.10 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 06:39:18",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[24959]: connection from 206.47.209.10 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 06:39:18",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[24969]: connection from 206.47.209.10 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 06:39:18",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[24960]: connection from 206.47.209.10 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 06:39:18",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[24963]: connection from 206.47.209.10 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 06:39:18",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[24961]: connection from 206.47.209.10 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 23:23:13",
+                    "highlightText": [{
+                        "fromPosition": 56,
+                        "toPosition": 66
+                    }],
+                    "message": "combo xinetd[26482]: warning: can't get client address: Connection reset by peer"
+                }, {
+                    "datetime": "Jul 25 23:23:13",
+                    "highlightText": [{
+                        "fromPosition": 56,
+                        "toPosition": 66
+                    }],
+                    "message": "combo xinetd[26484]: warning: can't get client address: Connection reset by peer"
+                }, {
+                    "datetime": "Jul 25 23:24:09",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[26479]: connection from 217.187.83.50 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 23:24:09",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[26478]: connection from 217.187.83.50 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 23:24:09",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[26477]: connection from 217.187.83.50 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 23:24:09",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[26476]: connection from 217.187.83.50 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 23:24:09",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[26475]: connection from 217.187.83.50 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 23:24:09",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[26474]: connection from 217.187.83.50 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 23:24:09",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[26473]: connection from 217.187.83.50 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 23:24:09",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[26467]: connection from 217.187.83.50 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 23:24:09",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[26471]: connection from 217.187.83.50 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 23:24:09",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[26472]: connection from 217.187.83.50 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 23:24:09",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[26468]: connection from 217.187.83.50 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 23:24:09",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[26470]: connection from 217.187.83.50 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 23:24:09",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[26469]: connection from 217.187.83.50 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 23:24:09",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[26464]: connection from 217.187.83.50 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 23:24:09",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[26465]: connection from 217.187.83.50 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 23:24:09",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[26480]: connection from 217.187.83.50 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 23:24:09",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[26481]: connection from 217.187.83.50 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 23:24:09",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[26483]: connection from 217.187.83.50 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 25 23:24:09",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[26485]: connection from 217.187.83.50 () at Mon  2005"
+                }, {
+                    "datetime": "Jul 26 05:47:42",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[28699]: connection from 172.181.208.156 () at Tue  2005"
+                }, {
+                    "datetime": "Jul 26 05:47:42",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[28703]: connection from 172.181.208.156 () at Tue  2005"
+                }, {
+                    "datetime": "Jul 26 05:47:42",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[28700]: connection from 172.181.208.156 () at Tue  2005"
+                }, {
+                    "datetime": "Jul 26 05:47:42",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[28701]: connection from 172.181.208.156 () at Tue  2005"
+                }, {
+                    "datetime": "Jul 26 05:47:42",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[28702]: connection from 172.181.208.156 () at Tue  2005"
+                }, {
+                    "datetime": "Jul 26 05:47:42",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[28696]: connection from 172.181.208.156 () at Tue  2005"
+                }, {
+                    "datetime": "Jul 26 05:47:42",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[28694]: connection from 172.181.208.156 () at Tue  2005"
+                }, {
+                    "datetime": "Jul 26 05:47:42",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[28695]: connection from 172.181.208.156 () at Tue  2005"
+                }, {
+                    "datetime": "Jul 26 05:47:42",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[28697]: connection from 172.181.208.156 () at Tue  2005"
+                }, {
+                    "datetime": "Jul 26 05:47:42",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[28698]: connection from 172.181.208.156 () at Tue  2005"
+                }, {
+                    "datetime": "Jul 26 05:47:42",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[28693]: connection from 172.181.208.156 () at Tue  2005"
+                }, {
+                    "datetime": "Jul 26 05:47:42",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[28689]: connection from 172.181.208.156 () at Tue  2005"
+                }, {
+                    "datetime": "Jul 26 05:47:42",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[28690]: connection from 172.181.208.156 () at Tue  2005"
+                }, {
+                    "datetime": "Jul 26 05:47:42",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[28691]: connection from 172.181.208.156 () at Tue  2005"
+                }, {
+                    "datetime": "Jul 26 05:47:42",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[28686]: connection from 172.181.208.156 () at Tue  2005"
+                }, {
+                    "datetime": "Jul 26 05:47:42",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[28687]: connection from 172.181.208.156 () at Tue  2005"
+                }, {
+                    "datetime": "Jul 26 05:47:42",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[28688]: connection from 172.181.208.156 () at Tue  2005"
+                }, {
+                    "datetime": "Jul 26 05:47:42",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[28692]: connection from 172.181.208.156 () at Tue  2005"
+                }, {
+                    "datetime": "Jul 26 05:47:51",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[28705]: connection from 172.181.208.156 () at Tue  2005"
+                }, {
+                    "datetime": "Jul 26 05:47:51",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[28704]: connection from 172.181.208.156 () at Tue  2005"
+                }, {
+                    "datetime": "Jul 26 05:47:51",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[28706]: connection from 172.181.208.156 () at Tue  2005"
+                }, {
+                    "datetime": "Jul 26 05:47:51",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[28707]: connection from 172.181.208.156 () at Tue  2005"
+                }, {
+                    "datetime": "Jul 26 05:47:51",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[28708]: connection from 172.181.208.156 () at Tue  2005"
+                }, {
+                    "datetime": "Jul 27 10:59:53",
+                    "highlightText": [{
+                        "fromPosition": 19,
+                        "toPosition": 29
+                    }],
+                    "message": "combo ftpd[31985]: connection from 218.38.58.3 () at Wed  2005"
+                }],
+                "datetimeFrom": "Jul 23 23:24:09",
+                "datetimeUntil": "Jul 27 23:24:09",
+                "phrase": "connection"
+            }
+
+
+// dummy graph endpoint payload
+
+
+{
+                "datetimeFrom": "Jul 23 23:24:09",
+                "datetimeUntil": "Jul 27 23:24:09",
+                "histogram": [{
+                    "count": 18,
+                    "datetime": "Jul 26 05:47:42"
+                }, {
+                    "count": 9,
+                    "datetime": "Jul 24 13:46:34"
+                }, {
+                    "count": 5,
+                    "datetime": "Jul 26 05:47:51"
+                }, {
+                    "count": 23,
+                    "datetime": "Jul 24 02:38:22"
+                }, {
+                    "count": 19,
+                    "datetime": "Jul 25 23:24:09"
+                }, {
+                    "count": 2,
+                    "datetime": "Jul 25 23:23:13"
+                }, {
+                    "count": 9,
+                    "datetime": "Jul 24 13:46:32"
+                }, {
+                    "count": 1,
+                    "datetime": "Jul 24 13:46:35"
+                }, {
+                    "count": 1,
+                    "datetime": "Jul 27 10:59:53"
+                }, {
+                    "count": 23,
+                    "datetime": "Jul 25 06:39:18"
+                }],
+                "phrase": "connection"
+            }
