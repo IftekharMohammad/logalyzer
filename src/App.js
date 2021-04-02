@@ -17,7 +17,10 @@ const App = () => {
         axios.get('http://localhost:8080/api/get_status', {headers: {"Access-Control-Allow-Origin": "*"}})
             .then(function (response) {
                 // handle success
-                 setIsLoaded(true);
+                if(response.data["status"] === "OK"){
+
+                    setIsLoaded(true);
+                }
                 console.log(response);
             })
             .catch(function (error) {

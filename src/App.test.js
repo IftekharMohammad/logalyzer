@@ -2,6 +2,7 @@ import App from './App';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Layout from './components/Layout/Layout';
+import Loader from './components/Blocks/Loader/Loader';
 import { shallow } from 'enzyme';
 
 describe("App Component", ()=>{
@@ -15,28 +16,30 @@ describe("App Component", ()=>{
     const renders = shallow(<App />);
   });
 
-  it('renders Header', () => {
-    expect(wrapper.contains(<Header />)).toBe(true);
+  it('renders Loader', () => {
+    expect(wrapper.containsMatchingElement(<Loader />)).toEqual(true);
+  });
+
+
+  it('renders Header error', () => {
+    wrapper.instance.setState = {
+      error: true
+    }
+    expect(wrapper.containsMatchingElement(<Header />)).toEqual(true);
+  });
+
+  it('renders Header on load', () => {
+    wrapper.instance.setState = {
+      isLoaded: true
+    }
+    expect(wrapper.containsMatchingElement(<Header />)).toEqual(true);
   });
 
   it('renders Main Body', () => {
-    expect(wrapper.contains(<Layout />)).toBe(true);
+    expect(wrapper.containsMatchingElement(<Layout />)).toEqual(true);
   });
 
   it('renders Footer', () => {
-    expect(wrapper.contains(<Footer />)).toBe(true);
+    expect(wrapper.find(Footer)).toHaveLength(1);
   });
-
-  // it('render lookup button', () => {
-  //   expect(wrapper.find('#lookup-button').text()).toBe("Lookup Log Analysis");
-  // });
-  //
-  // it('render initial value of state', () => {
-  //   expect(wrapper.find('#counter-value').text()).toBe('0');
-  // });
-  //
-  // it('render click event to increament initial value of state', () => {
-  //   wrapper.find('#lookup-button').simulate('click');
-  //   expect(wrapper.find('#counter-value').text()).toBe('1');
-  // });
 });

@@ -22,7 +22,7 @@ const CustomButton = ({text, bgColorClass, textColorClass, borderColorClass, mod
 
     return (
         <button
-            className={generateClass(bgColorClass, textColorClass, borderColorClass, mode)} onClick={onClick}> {text}
+            className={generateClass(bgColorClass, textColorClass, borderColorClass, mode)} onClick={onClick}>{text}
         </button>
 
     );
