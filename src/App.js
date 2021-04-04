@@ -18,17 +18,18 @@ const App = () => {
             .then(function (response) {
                 // handle success
                 if(response.data["status"] === "OK"){
-
                     setIsLoaded(true);
+                    setError(false);
+                } else{
+                    setIsLoaded(true);
+                    setError(true);
                 }
-                console.log(response);
             })
             .catch(function (error) {
                     setIsLoaded(true);
                     setError(error);
-                console.log(error);
             });
-    }, [])
+    }, []);
 
     if (error) {
         return (
@@ -54,6 +55,6 @@ const App = () => {
         );
     }
 
-}
+};
 
 export default App;

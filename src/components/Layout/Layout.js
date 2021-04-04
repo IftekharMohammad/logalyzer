@@ -16,37 +16,31 @@ const Layout = () => {
     const [chartData, setChartData] = useState({});
 
     const [error, setError] = useState(null);
-    const [isLoaded, setIsLoaded] = useState(false);
+    const [isLoaded, setIsLoaded] = useState(true);
 
     const onSubmit = (success, data) => {
         if (success) {
-
+            setIsLoaded(false);
             axios.post('http://localhost:8080/api/data', data, {headers: {"Access-Control-Allow-Origin": "*"}})
                 .then(function (response) {
-                    setLogData(response);
+                    setLogData(response.data);
                     axios.post('http://localhost:8080/api/histogram', data, {headers: {"Access-Control-Allow-Origin": "*"}})
                         .then(function (responseChart) {
-                            setChartData(response);
+                            setChartData(responseChart.data);
                             setIsLoaded(true);
                         })
                         .catch(function (error) {
                             setIsLoaded(true);
                             setError(error);
-                            console.log(error);
                         });
                 })
                 .catch(function (error) {
                     setIsLoaded(true);
                     setError(error);
-                    console.log(error);
                 });
 
             setShowData(true);
-        } else {
-
         }
-
-        console.log(showData);
     };
 
     const onReset = () => {
