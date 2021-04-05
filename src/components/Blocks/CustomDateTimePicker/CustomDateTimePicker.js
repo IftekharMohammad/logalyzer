@@ -3,7 +3,7 @@ import DatePicker from 'react-datepicker'
 import "react-datepicker/dist/react-datepicker.css";
 import "./CustomDateTimePicker.css"
 
-const CustomDateTimePicker = ({refs, parentFieldName, onSelect}) => {
+const CustomDateTimePicker = ({refs, parentFieldName, onSelect, minDate, maxDate}) => {
     const [date, setDate] = useState(null);
 
     useImperativeHandle(refs, () => ({
@@ -18,11 +18,7 @@ const CustomDateTimePicker = ({refs, parentFieldName, onSelect}) => {
 
     const processDate = (data) => {
         setDate(data);
-        let dateString = data.toDateString().split(" ");
-        let timeString = data.toTimeString().split(" ");
-
-        dateString = dateString[1] + " " + parseInt(dateString[2]).toString() + " " + timeString[0];
-        onSelect(parentFieldName, dateString);
+        onSelect(parentFieldName, data);
 
     };
 
@@ -35,6 +31,8 @@ const CustomDateTimePicker = ({refs, parentFieldName, onSelect}) => {
                 onChange={date => processDate(date)}
                 timeInputLabel="Time:"
                 dateFormat="MMM d kk:mm:ss"
+                minDate={minDate ? minDate : null}
+                maxDate={maxDate ? maxDate : null}
                 showTimeInput
             />
             <div className="absolute left-3 top-2">

@@ -7,8 +7,8 @@ import SimpleReactValidator from 'simple-react-validator';
 
 const Form = ({onSubmit, onReset}) => {
 
-    const [startDate, setStartDate] = useState("");
-    const [endDate, setEndDate] = useState("");
+    const [startDate, setStartDate] = useState(null);
+    const [endDate, setEndDate] = useState(null);
     const [phase, setPhase] = useState("");
 
     const [errorMessages, setErrorMessage] = useState({});
@@ -38,6 +38,14 @@ const Form = ({onSubmit, onReset}) => {
         setErrorMessage(simpleValidator.current.getErrorMessages());
     };
 
+    const processDateToString = (data) => {
+        let dateString = data.toDateString().split(" ");
+        let timeString = data.toTimeString().split(" ");
+
+        dateString = dateString[1] + " " + parseInt(dateString[2]).toString() + " " + timeString[0];
+        return dateString
+    };
+
     const submitForm = () => {
         let success = false;
         let payload = null;
@@ -45,8 +53,8 @@ const Form = ({onSubmit, onReset}) => {
             success = true;
 
             payload = {
-                datetimeFrom: startDate,
-                datetimeUntil: endDate,
+                datetimeFrom: processDateToString(startDate),
+                datetimeUntil: processDateToString(endDate),
                 phrase: phase
             }
 
@@ -80,7 +88,7 @@ const Form = ({onSubmit, onReset}) => {
                         <div className="flex flex-col">
                             <label className="leading-loose">Start Datetime</label>
                             <div className="relative m-4 focus-within:text-gray-600 text-gray-400">
-                                <CustomDateTimePicker refs={startRef} parentFieldName="startDate"
+                                <CustomDateTimePicker refs={startRef} parentFieldName="startDate" maxDate={endDate}
                                                       onSelect={setDateParameters}/>
                                 {simpleValidator.current.message('startDateTime', startDate, 'required', {className: 'hidden'})}
                             </div>
@@ -92,7 +100,7 @@ const Form = ({onSubmit, onReset}) => {
                         <div className="flex flex-col">
                             <label className="leading-loose">End Datetime</label>
                             <div className="relative m-4 focus-within:text-gray-600 text-gray-400">
-                                <CustomDateTimePicker refs={endRef} parentFieldName="endDate"
+                                <CustomDateTimePicker refs={endRef} parentFieldName="endDate" minDate={startDate}
                                                       onSelect={setDateParameters}/>
                                 {simpleValidator.current.message('endDateTime', endDate, 'required', {className: 'hidden'})}
                             </div>

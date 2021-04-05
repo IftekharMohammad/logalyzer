@@ -25,6 +25,8 @@ describe("App Component", ()=>{
     wrapper.instance.setState = {
       error: true
     }
+
+    console.log(wrapper.html())
     expect(wrapper.containsMatchingElement(<Header />)).toEqual(true);
   });
 
@@ -35,11 +37,42 @@ describe("App Component", ()=>{
     expect(wrapper.containsMatchingElement(<Header />)).toEqual(true);
   });
 
-  it('renders Main Body', () => {
+  it('renders Header on successful load', () => {
+    wrapper.instance.setState = {
+      isLoaded: true,
+      error: false,
+    }
+    expect(wrapper.containsMatchingElement(<Header />)).toEqual(true);
+  });
+
+  it('renders Footer error', () => {
+    wrapper.instance.setState = {
+      error: true
+    }
+    expect(wrapper.containsMatchingElement(<Footer />)).toEqual(true);
+  });
+
+  it('renders Footer on load', () => {
+    wrapper.instance.setState = {
+      isLoaded: true
+    }
+    expect(wrapper.containsMatchingElement(<Footer />)).toEqual(true);
+  });
+
+  it('renders Footer on successful load', () => {
+    wrapper.instance.setState = {
+      isLoaded: true,
+      error: false,
+    }
+    expect(wrapper.containsMatchingElement(<Footer />)).toEqual(true);
+  });
+
+  it('renders Main Body on successful load', () => {
+    wrapper.instance.setState = {
+      isLoaded: true,
+      error: false,
+    }
     expect(wrapper.containsMatchingElement(<Layout />)).toEqual(true);
   });
 
-  it('renders Footer', () => {
-    expect(wrapper.find(Footer)).toHaveLength(1);
-  });
 });

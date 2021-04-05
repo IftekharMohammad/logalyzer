@@ -2,10 +2,16 @@
 A basic Linux log analyzer tool. React is used for the frontend 
 
 
-# Tech Used
+## Tech Used
 * React 17
 * Node 14+
 * Enzyme
+
+## Install Dependencies
+
+To install project dependencies, please run:
+### `npm install`
+
 
 ## Available Scripts
 
