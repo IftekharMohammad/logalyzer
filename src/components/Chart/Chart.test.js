@@ -1,7 +1,6 @@
 import Charts from './Chart'
-import Chart from './Chart'
 import {shallow} from 'enzyme';
-
+import {Line} from 'react-chartjs-2';
 import Tooltip from "../Blocks/Tooltip/Tooltip";
 
 describe("Chart Component", () => {
@@ -31,6 +30,6 @@ describe("Chart Component", () => {
     });
 
     it('renders chart component correctly', () => {
-        expect(wrapper.contains(<Chart/>)).toBe(true);
+        expect(wrapper.contains(<Line/>)).toBe(true);
     });
 });
