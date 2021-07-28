@@ -21,10 +21,10 @@ const Layout = () => {
     const onSubmit = (success, data) => {
         if (success) {
             setIsLoaded(false);
-            axios.post('http://localhost:8080/api/data', data, {headers: {"Access-Control-Allow-Origin": "*"}})
+            axios.post('https://logalyzer-backend.herokuapp.com/api/data', data, {headers: {"Access-Control-Allow-Origin": "*"}})
                 .then(function (response) {
                     setLogData(response.data);
-                    axios.post('http://localhost:8080/api/histogram', data, {headers: {"Access-Control-Allow-Origin": "*"}})
+                    axios.post('https://logalyzer-backend.herokuapp.com/api/histogram', data, {headers: {"Access-Control-Allow-Origin": "*"}})
                         .then(function (responseChart) {
                             setChartData(responseChart.data);
                             setIsLoaded(true);

@@ -14,7 +14,7 @@ const App = () => {
 
     useEffect(() => {
 
-        axios.get('http://localhost:8080/api/get_status', {headers: {"Access-Control-Allow-Origin": "*"}})
+        axios.get('https://logalyzer-backend.herokuapp.com/api/get_status', {headers: {"Access-Control-Allow-Origin": "*"}})
             .then(function (response) {
                 // handle success
                 if(response.data["status"] === "OK"){
